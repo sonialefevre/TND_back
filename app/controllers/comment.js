@@ -13,8 +13,8 @@ const commentController = {
   addComment: async (req, res) => {
     try {
       const newCom = await Comment.create({
-        clientname: req.body.name,
-        clientcompany: req.body.company,
+        clientname: req.body.clientname,
+        clientcompany: req.body.clientcompany,
         comment: req.body.comment,
       });
       res.json(newCom);

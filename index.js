@@ -12,6 +12,8 @@ const port = process.env.PORT;
 app.use(cors());
 // Extracting all POST requests
 app.use(express.urlencoded({ extended: true }));
+// Allowing express to read json (for requests needing req.body)
+app.use(express.json());
 
 //Extracting data from multipart POST requests
 const mutipartParser = multer();
