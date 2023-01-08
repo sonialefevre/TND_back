@@ -22,6 +22,9 @@ const commentController = {
       console.error(error);
     }
   },
+
+  //TODO: Method to delete one comment (patch?)
+  //TODO: Method to delete all comments
 };
 
 module.exports = commentController;
